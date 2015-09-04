@@ -26,7 +26,7 @@ function buyRate(){
     var RateCost = Math.floor(5000 * Math.pow(2, ownedRates));
     if(cash >= RateCost){
         ownedRates += 1;
-        Rate -= 1000;
+        Rate -= 100;
         cash -= RateCost;
         document.getElementById("Rate").innerHTML = Rate;
     };
