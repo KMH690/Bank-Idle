@@ -1,3 +1,4 @@
+
 window.onload = function WindowLoad(event) {
     function load() {
 	var savegame = JSON.parse(localStorage.getItem("save"));
@@ -43,6 +44,10 @@ function buyamount(){
     };
     var nextamountCost = Math.floor(5000 * Math.pow(2, amountMultipliers));
     document.getElementById("amountCost").innerHTML = nextamountCost;
+};
+function convert(var1, var2){
+	var2=var1;
+	var1=var1-var1;
 };
 setInterval(function(){
 	interest(cps);
